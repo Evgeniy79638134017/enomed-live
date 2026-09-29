@@ -3,36 +3,69 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Onest:wght@400;500;600&display=swap">
 <style>
-:root{--forest:#0f3e17;--sage:#b1dbb8;--keylime:#e1f4df;--mint:#cfe7d3;--cream:#fffefc;--charcoal:#222;--border:#efeeeb;--muted:#3d4f40;--r:14px}
+:root{--forest:#1D2BC4;--deep:#141C7A;--violet:#7B5CFF;--sage:#C4B5FD;--keylime:#F1EEFF;--mint:#E4E8FF;--cream:#FCFBFF;--charcoal:#1c1d2b;--border:#E6E3F5;--muted:#4b4f6b;--r:16px;--pearl:linear-gradient(135deg,#F4F1FF 0%,#EAF0FF 45%,#F7EEFF 100%)}
 *{box-sizing:border-box}html,body{margin:0;background:var(--cream);color:var(--charcoal)}
 body{font-family:"Onest",Inter,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--forest)}
-.top{position:sticky;top:0;z-index:5;background:rgba(255,254,252,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.top{position:sticky;top:0;z-index:5;background:rgba(252,251,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
 .top .w{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;max-width:1100px;margin:0 auto}
-.logo{font-family:"Inter Tight",Onest,sans-serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--forest)}
-.btn{display:inline-block;background:var(--forest);color:var(--cream);text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:500;font-size:15px;white-space:nowrap}
-.btn.light{background:var(--keylime);color:var(--forest)}
+.logo{font-family:"Inter Tight",Onest,sans-serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--deep)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--forest),var(--violet));color:#fff;text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:500;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.btn.light{background:var(--keylime);color:var(--deep)}
 .w{max-width:760px;margin:0 auto;padding:0 16px}
-.crumbs{font-size:14px;color:var(--muted);margin:28px 0 8px}.crumbs a{color:var(--muted)}
-h1,h2,h3{font-family:"Inter Tight",Onest,sans-serif;letter-spacing:-.02em;color:var(--forest);line-height:1.2}
-h1{font-size:clamp(28px,5vw,42px);font-weight:600;margin:8px 0 18px}
-h2{font-size:clamp(22px,3.4vw,28px);font-weight:600;margin:40px 0 12px}
+.crumbs{font-size:14px;color:var(--muted);margin:22px 0 8px}.crumbs a{color:var(--muted)}
+h1,h2,h3{font-family:"Inter Tight",Onest,sans-serif;letter-spacing:-.02em;color:var(--deep);line-height:1.2}
+h1{font-size:clamp(28px,5vw,42px);font-weight:600;margin:10px 0 14px}
+h2{font-size:clamp(22px,3.4vw,28px);font-weight:600;margin:40px 0 12px;scroll-margin-top:80px}
 p,li{color:var(--charcoal)}
-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--keylime)}
-.faq{background:var(--keylime);border-radius:var(--r);padding:8px 20px 12px;margin:32px 0}
-.cta{background:var(--forest);color:var(--cream);border-radius:var(--r);padding:24px;margin:36px 0}
-.cta h2{color:var(--cream);margin-top:0}.cta p{color:var(--cream)}.cta a.btn{background:var(--cream);color:var(--forest)}.cta ul{margin:6px 0 18px;padding-left:20px}.cta li{color:var(--cream);margin:4px 0}.cta .sec{display:inline-block;margin-left:14px;color:var(--sage);font-size:15px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;display:block;overflow-x:auto;border-radius:12px}
+th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}th{background:var(--mint);color:var(--deep)}
+.faq{background:var(--pearl);border:1px solid var(--border);border-radius:var(--r);padding:8px 20px 12px;margin:32px 0}
+.cta{background:linear-gradient(135deg,#1D2BC4 0%,#3A2BD8 55%,#7B5CFF 100%);color:#fff;border-radius:var(--r);padding:24px;margin:36px 0;box-shadow:0 18px 40px rgba(29,43,196,.25)}
+.cta h2{color:#fff;margin-top:0}.cta p{color:#fff}.cta a.btn{background:#fff;color:var(--deep)}.cta ul{margin:6px 0 18px;padding-left:20px}.cta li{color:#fff;margin:4px 0}.cta .sec{display:inline-block;margin:10px 0 0 14px;color:#DCD3FF;font-size:15px}
 .disc{font-size:14px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;margin:28px 0 48px}
-.list{list-style:none;padding:0;display:grid;gap:10px;margin:24px 0 48px}
-.list a{display:block;border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;text-decoration:none;background:#fff}
-.list a:hover{border-color:var(--sage)}.list b{display:block;color:var(--forest);font-family:"Inter Tight",Onest,sans-serif;font-size:18px;font-weight:600}
-.list span{font-size:14px;color:var(--muted)}
 .more{margin:24px 0}
 footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padding:20px 0 32px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:var(--c,#E4E8FF);color:var(--ct,#141C7A)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:14px;color:var(--muted);margin:6px 0 18px}
+.cover{position:relative;border-radius:20px;overflow:hidden;margin:4px 0 22px;background:var(--pearl);aspect-ratio:16/9;box-shadow:0 14px 40px rgba(20,28,122,.12)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover.contain img{object-fit:contain;padding:10px}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,28,122,.35))}
+.toc{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:14px 18px;margin:0 0 22px}
+.toc b{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--violet)}
+.toc ol{margin:8px 0 0;padding-left:20px}.toc li{margin:3px 0;font-size:15px}.toc a{text-decoration:none;color:var(--deep)}
+.jump{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:500;text-decoration:none;color:var(--deep);background:var(--keylime);border:1px solid var(--sage);border-radius:999px;padding:8px 14px;margin:0 0 20px}
+.photo{margin:28px 0;border-radius:18px;overflow:hidden;background:var(--pearl)}
+.photo img{width:100%;max-height:420px;object-fit:cover;display:block}
+.photo figcaption{font-size:13px;color:var(--muted);padding:9px 14px}
+.memo{position:relative;margin:36px 0;padding:22px 20px 18px;border-radius:20px;background:var(--pearl);border:1.5px solid var(--sage);box-shadow:0 16px 40px rgba(123,92,255,.14);scroll-margin-top:80px}
+.memo .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--forest),var(--violet));padding:5px 11px;border-radius:999px}
+.memo h2{margin:12px 0 6px;font-size:24px}
+.memo .sub{font-size:14px;color:var(--muted);margin:0 0 12px}
+.memo ul{list-style:none;padding:0;margin:0 0 16px}
+.memo li{margin:0;border-top:1px solid var(--border)}
+.memo label{display:flex;gap:12px;align-items:flex-start;padding:11px 2px;cursor:pointer;font-size:16px;line-height:1.45}
+.memo input{appearance:none;flex:0 0 22px;height:22px;border-radius:7px;border:2px solid var(--violet);margin:1px 0 0;background:#fff;display:grid;place-items:center}
+.memo input:checked{background:linear-gradient(135deg,var(--forest),var(--violet));border-color:transparent}
+.memo input:checked:after{content:"✓";color:#fff;font-size:14px;font-weight:700}
+.memo input:checked+span{color:var(--muted);text-decoration:line-through}
+.memo .acts{display:flex;flex-wrap:wrap;gap:8px}
+.memo .prog{font-size:13px;color:var(--violet);font-weight:600;margin:0 0 10px}
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:18px 0 44px}
+.cards a{display:flex;flex-direction:column;height:100%;border:1px solid var(--border);border-radius:18px;overflow:hidden;text-decoration:none;background:#fff;transition:transform .2s,box-shadow .2s}
+.cards a:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,28,122,.12)}
+.cards .th{aspect-ratio:16/9;background:var(--pearl)}.cards .th img{width:100%;height:100%;object-fit:cover;display:block}
+.cards .th.contain img{object-fit:contain;padding:6px}
+.cards .bd{padding:12px 14px 16px;display:flex;flex-direction:column;gap:6px}
+.cards b{color:var(--deep);font-family:"Inter Tight",Onest,sans-serif;font-size:17px;font-weight:600;line-height:1.25}
+.cards span.d{font-size:14px;color:var(--muted);line-height:1.45}
+.cards .mm{font-size:12px;color:var(--violet);font-weight:600}
+.hero-ix{background:var(--pearl);border:1px solid var(--border);border-radius:22px;padding:22px 20px;margin:10px 0 8px}
+@media print{body *{visibility:hidden}.memo,.memo *{visibility:visible}.memo{position:absolute;left:0;top:0;right:0;box-shadow:none}.memo .acts{display:none}}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Стоит ли делать зубы в Китае: гарантия и что говорят отзывы", "description": "Стоит ли делать зубы в Китае, если гарантия действует только в клинике? Честно об ограничениях гарантии на расстоянии и о том, как снизить риски до поездки.", "inLanguage": "ru", "keywords": "стоит ли делать зубы в китае отзывы, зубы в китае вся правда, гарантия на зубы в китае, гарантия на импланты в китае, что делать если зубы в китае", "author": {"@type": "Organization", "name": "ЭНО мед"}, "datePublished": "2026-09-28"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Стоит ли делать зубы в Китае, судя по отзывам?", "acceptedAnswer": {"@type": "Answer", "text": "В отзывах хвалят цену, скорость и сопровождение, а жалуются на рост цены на месте, отсутствие документов и сложности с гарантией. Решение стоит принимать, взвесив экономию и расходы на возможные повторные поездки."}}, {"@type": "Question", "name": "Действует ли гарантия китайской клиники в России?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Гарантия, как правило, применяется только в самой клинике. Клиника-партнёр заявляет гарантию на своих условиях — уточняйте их в договоре."}}, {"@type": "Question", "name": "Кто оплачивает дорогу, если нужна переделка?", "acceptedAnswer": {"@type": "Answer", "text": "Обычно дорога, проживание и дни отпуска — расходы пациента. Это стоит учесть в расчёте заранее."}}, {"@type": "Question", "name": "Что делать, если после возвращения заболел зуб?", "acceptedAnswer": {"@type": "Answer", "text": "При острой боли или отёке — сразу к врачу по месту жительства. Затем сообщите куратору «ЭНО мед»: он передаст информацию в клинику и поможет согласовать дальнейшие шаги."}}, {"@type": "Question", "name": "Даёт ли «ЭНО мед» гарантию на лечение?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Гарантию на свои работы заявляет клиника на своих условиях."}}]}</script></head><body>
-<header class="top"><div class="w" style="max-width:1100px"><a class="logo" href="../../index.html">ЭНО мед</a><span style="display:flex;gap:8px"><a class="btn light" href="../../stati/index.html">Статьи</a><a class="btn" href="../../index.html">Об ЭНО мед</a></span></div></header>
-<main class="w"><div class="crumbs"><a href="../../index.html">Главная</a> · <a href="../../stati/index.html">Статьи</a></div><h1>Стоит ли делать зубы в Китае: вся правда о гарантии на расстоянии</h1><p>Стоит ли делать зубы в Китае — вопрос, на который отзывы отвечают по-разному, и главная причина сомнений почти всегда одна: а что, если что-то пойдёт не так уже дома? Честный ответ: гарантия китайской клиники работает иначе, чем гарантия клиники в вашем городе, и полностью убрать этот риск нельзя. Но его можно заметно уменьшить — если подготовиться до поездки. Разбираем, как.</p><h2>Что говорят отзывы: плюсы и страхи</h2>
+<header class="top"><div class="w" style="max-width:1100px"><a class="logo" href="/enomed-live/">ЭНО мед</a><span style="display:flex;gap:8px"><a class="btn light" href="/enomed-live/stati/">Статьи</a><a class="btn" href="/enomed-live/">Об ЭНО мед</a></span></div></header>
+<main class="w"><div class="crumbs"><a href="/enomed-live/">Главная</a> · <a href="/enomed-live/stati/">Статьи</a></div><h1>Стоит ли делать зубы в Китае: вся правда о гарантии на расстоянии</h1><div class="meta"><span class="chip" style="--c:#E6F0FF;--ct:#1D4FC4">Как выбрать</span><span>5 мин чтения</span><span>Обновлено 29.09.2026</span></div><div class="cover"><img src="/enomed-live/stati/_img/12.webp" alt=""></div><a class="jump" href="#memo">📌 Памятка к статье — Какие документы забрать из клиники</a><nav class="toc"><b>В статье</b><ol><li><a href="#s1">Что говорят отзывы: плюсы и страхи</a></li><li><a href="#s2">Главное ограничение: гарантия не «переезжает» вместе с вами</a></li><li><a href="#s3">Что можно сделать до поездки, чтобы снизить риски</a></li><li><a href="#s4">Какие документы забрать из клиники</a></li><li><a href="#s5">Что делать, если что-то пошло не так дома</a></li><li><a href="#s6">Что делает «ЭНО мед», а что — нет</a></li><li><a href="#memo">📌 Памятка</a></li></ol></nav><p>Стоит ли делать зубы в Китае — вопрос, на который отзывы отвечают по-разному, и главная причина сомнений почти всегда одна: а что, если что-то пойдёт не так уже дома? Честный ответ: гарантия китайской клиники работает иначе, чем гарантия клиники в вашем городе, и полностью убрать этот риск нельзя. Но его можно заметно уменьшить — если подготовиться до поездки. Разбираем, как.</p><h2 id="s1">Что говорят отзывы: плюсы и страхи</h2>
 <p>В публичных отзывах о лечении в Хэйхэ часто хвалят скорость (нередко пишут о 3–7 днях на этап), цену в 2–4 раза ниже, встречу и сопровождение, отсутствие скрытых доплат — там, где их действительно не было.</p>
 <p>Жалуются и боятся другого:</p>
 <ul>
@@ -44,7 +77,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li>«перехват» пациентов посредниками у таможни;</li>
 <li>сотни сайтов называют себя «государственной клиникой», и непонятно, кому верить.</li>
 </ul>
-<p>Большинство этих рисков связаны не с лечением как таковым, а с тем, как оно организовано и оформлено. Об этом ниже.</p><h2>Главное ограничение: гарантия не «переезжает» вместе с вами</h2>
+<p>Большинство этих рисков связаны не с лечением как таковым, а с тем, как оно организовано и оформлено. Об этом ниже.</p><h2 id="s2">Главное ограничение: гарантия не «переезжает» вместе с вами</h2>
 <p>Скажем прямо, без смягчений.</p>
 <ol>
 <li><strong>Гарантия китайской клиники в России не действует.</strong> Об этом предупреждают СМИ, в том числе health.mail.ru. Российская клиника не обязана бесплатно исправлять работу китайской.</li>
@@ -52,7 +85,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li><strong>Вернуть деньги по китайскому праву сложно.</strong> Об этом тоже пишут в СМИ. Рассчитывать на судебную защиту из России нереалистично.</li>
 </ol>
 <p>Клиника-партнёр «ЭНО мед» заявляет гарантию на имплантаты 20 лет и на коронки 15 лет — на своих условиях; условия уточняйте в договоре. «ЭНО мед» гарантию на лечение не даёт и дать не может: мы не медицинская организация, а организатор поездки и сопровождения.</p>
-<p>Если для вас критично, чтобы при любой проблеме можно было дойти до врача пешком, — это серьёзный аргумент в пользу лечения дома. Сравнение с учётом дороги — в статье <a href="../../stati/zuby-v-kitae-ili-v-blagoveshchenske/index.html">«Зубы в Китае или в Благовещенске»</a>.</p><h2>Что можно сделать до поездки, чтобы снизить риски</h2>
+<p>Если для вас критично, чтобы при любой проблеме можно было дойти до врача пешком, — это серьёзный аргумент в пользу лечения дома. Сравнение с учётом дороги — в статье <a href="/enomed-live/stati/zuby-v-kitae-ili-v-blagoveshchenske/">«Зубы в Китае или в Благовещенске»</a>.</p><figure class="photo"><img loading="lazy" src="/enomed-live/stati/_img/17.webp" alt=""><figcaption>Клиника-партнёр в Хэйхэ · демонстрационное фото</figcaption></figure><h2 id="s3">Что можно сделать до поездки, чтобы снизить риски</h2>
 <p>Большую часть проблем из отзывов проще предотвратить, чем потом решать.</p>
 <ol>
 <li><strong>Получить план и цену до поездки.</strong> Врач изучает снимки и составляет предварительный план с расчётом. Если после осмотра план меняется, врач объясняет почему, а вы соглашаетесь или отказываетесь до начала работ.</li>
@@ -60,7 +93,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li><strong>Не платить заранее незнакомым людям.</strong> «ЭНО мед» работает без предоплаты.</li>
 <li><strong>Прочитать условия гарантии.</strong> На что распространяется, какой срок, что нужно для обращения, что не покрывается — например, при нарушении рекомендаций по уходу.</li>
 <li><strong>Договориться, кто встретит.</strong> Чтобы не попасть к «перехватчикам» у таможни, вас должен встретить человек, с которым вы уже на связи.</li>
-</ol><h2>Какие документы забрать из клиники</h2>
+</ol><h2 id="s4">Какие документы забрать из клиники</h2>
 <p>Документы — это ваша опора, если что-то понадобится решать потом:</p>
 <ul>
 <li>договор или иной документ с условиями гарантии;</li>
@@ -69,7 +102,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li>документы об оплате;</li>
 <li>снимки до и после, если делались.</li>
 </ul>
-<p>Храните их вместе. Без документов разговор о гарантии превращается в спор «слово против слова».</p><h2>Что делать, если что-то пошло не так дома</h2>
+<p>Храните их вместе. Без документов разговор о гарантии превращается в спор «слово против слова».</p><h2 id="s5">Что делать, если что-то пошло не так дома</h2>
 <p>Порядок действий такой:</p>
 <ol>
 <li><strong>При острой боли, отёке, температуре — сразу к врачу по месту жительства.</strong> Здоровье важнее гарантии. Сохраните заключение врача.</li>
@@ -77,9 +110,9 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li><strong>Куратор передаёт информацию в клинику.</strong> Врач клиники оценивает ситуацию и говорит, что нужно: наблюдение, визит, переделка.</li>
 <li><strong>Если нужен визит — вместе планируем поездку.</strong> Куратор помогает согласовать дату и сопровождает, как и в первый раз.</li>
 </ol>
-<p>Честно: мы не можем обещать, что любой вопрос решится удалённо. Но вы не останетесь с проблемой один на один и без понимания, куда писать.</p><h2>Что делает «ЭНО мед», а что — нет</h2>
+<p>Честно: мы не можем обещать, что любой вопрос решится удалённо. Но вы не останетесь с проблемой один на один и без понимания, куда писать.</p><h2 id="s6">Что делает «ЭНО мед», а что — нет</h2>
 <p>Делаем: работаем без предоплаты; до поездки получаем предварительный план от врача по вашим снимкам; даём русскоговорящего куратора на каждом этапе; помогаем с подготовкой, встречаем в Хэйхэ и сопровождаем до клиники; после возвращения помогаем держать связь с клиникой.</p>
-<p>Не делаем: не лечим, не ставим диагнозы, не даём гарантий на результат лечения и не обещаем, что гарантия клиники будет работать в России. Подробный путь пациента — в статье <a href="../../stati/kak-sdelat-zuby-v-kitae/index.html">«Как сделать зубы в Китае: пошагово»</a>.</p><section class="faq"><h2>Частые вопросы</h2>
+<p>Не делаем: не лечим, не ставим диагнозы, не даём гарантий на результат лечения и не обещаем, что гарантия клиники будет работать в России. Подробный путь пациента — в статье <a href="/enomed-live/stati/kak-sdelat-zuby-v-kitae/">«Как сделать зубы в Китае: пошагово»</a>.</p><section class="memo" id="memo" data-n="24"><span class="tag">📌 Памятка · сохраните</span><h2>Какие документы забрать из клиники</h2><p class="sub">Отмечайте пункты по мере подготовки. Сохраните памятку в PDF или отправьте себе — пригодится перед поездкой.</p><p class="prog">Готово: <span class="pc">0</span> из 6</p><ul><li><label><input type="checkbox"><span>Выписка с описанием всех работ</span></label></li><li><label><input type="checkbox"><span>Паспорт импланта с серийным номером</span></label></li><li><label><input type="checkbox"><span>Снимки до и после лечения</span></label></li><li><label><input type="checkbox"><span>Условия гарантии письменно</span></label></li><li><label><input type="checkbox"><span>Чеки об оплате</span></label></li><li><label><input type="checkbox"><span>Контакты врача и куратора</span></label></li></ul><div class="acts"><button class="btn" type="button" onclick="window.print()">Сохранить в PDF</button><a class="btn light tg" target="_blank" rel="noopener">Отправить себе в Telegram</a></div></section><section class="faq"><h2>Частые вопросы</h2>
 <p><strong>Стоит ли делать зубы в Китае, судя по отзывам?</strong>
 В отзывах хвалят цену, скорость и сопровождение, а жалуются на рост цены на месте, отсутствие документов и сложности с гарантией. Решение стоит принимать, взвесив экономию и расходы на возможные повторные поездки.</p>
 <p><strong>Действует ли гарантия китайской клиники в России?</strong>
@@ -89,4 +122,4 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <p><strong>Что делать, если после возвращения заболел зуб?</strong>
 При острой боли или отёке — сразу к врачу по месту жительства. Затем сообщите куратору «ЭНО мед»: он передаст информацию в клинику и поможет согласовать дальнейшие шаги.</p>
 <p><strong>Даёт ли «ЭНО мед» гарантию на лечение?</strong>
-Нет. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Гарантию на свои работы заявляет клиника на своих условиях.</p></section><section class="cta"><h2>Кто такие «ЭНО мед» и как мы сопровождаем лечение</h2><p>Мы из Благовещенска и организуем лечение зубов в Хэйхэ так, чтобы вы заранее понимали каждый шаг:</p><ul><li>план лечения и смета — до поездки, без предоплаты;</li><li>русскоговорящий куратор — от границы до кресла врача и после возвращения;</li><li>клиника с лицензией и открытыми документами врачей;</li><li>паспорт импланта на руках после лечения.</li></ul><a class="btn" href="../../index.html">Узнать подробности →</a><a class="sec" href="../../index.html#contact">или сразу получить план лечения</a></section><div class="disc"><p><em>Материал носит информационный характер и не является медицинской консультацией. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Решение о лечении принимает врач после осмотра.</em></p></div></main><footer><div class="w">«ЭНО мед» не является медицинской организацией. Лечение проводит партнёрская клиника в Хэйхэ. ИП Ожегов Р.В., ИНН 280113718085. Концепт подготовлен ИИщенко LAB для встречи ИИщенко CLUB 29.09.2026.</div></footer></body></html>
+Нет. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Гарантию на свои работы заявляет клиника на своих условиях.</p></section><section class="cta"><h2>Кто такие «ЭНО мед» и как мы сопровождаем лечение</h2><p>Мы из Благовещенска и организуем лечение зубов в Хэйхэ так, чтобы вы заранее понимали каждый шаг:</p><ul><li>план лечения и смета — до поездки, без предоплаты;</li><li>русскоговорящий куратор — от границы до кресла врача и после возвращения;</li><li>клиника с лицензией и открытыми документами врачей;</li><li>паспорт импланта на руках после лечения.</li></ul><a class="btn" href="/enomed-live/">Узнать подробности →</a><a class="sec" href="/enomed-live/#contact">или сразу получить план лечения</a></section><div class="disc"><p><em>Материал носит информационный характер и не является медицинской консультацией. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Решение о лечении принимает врач после осмотра.</em></p></div></main><script>(function(){var m=document.getElementById("memo");if(!m)return;var k="memo"+m.dataset.n,b=m.querySelectorAll("input"),pc=m.querySelector(".pc");var st={};try{st=JSON.parse(localStorage.getItem(k)||"{}")}catch(e){}b.forEach(function(x,i){x.checked=!!st[i];x.onchange=function(){st[i]=x.checked;try{localStorage.setItem(k,JSON.stringify(st))}catch(e){}up()}});function up(){pc.textContent=[].filter.call(b,function(x){return x.checked}).length}up();var tg=m.querySelector(".tg");tg.href="https://t.me/share/url?url="+encodeURIComponent(location.href)+"&text="+encodeURIComponent("Памятка: "+m.querySelector("h2").textContent)})()</script><footer><div class="w">«ЭНО мед» не является медицинской организацией. Лечение проводит партнёрская клиника в Хэйхэ. ИП Ожегов Р.В., ИНН 280113718085. Демонстрационная версия сайта.</div></footer></body></html>

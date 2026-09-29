@@ -3,38 +3,71 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Onest:wght@400;500;600&display=swap">
 <style>
-:root{--forest:#0f3e17;--sage:#b1dbb8;--keylime:#e1f4df;--mint:#cfe7d3;--cream:#fffefc;--charcoal:#222;--border:#efeeeb;--muted:#3d4f40;--r:14px}
+:root{--forest:#1D2BC4;--deep:#141C7A;--violet:#7B5CFF;--sage:#C4B5FD;--keylime:#F1EEFF;--mint:#E4E8FF;--cream:#FCFBFF;--charcoal:#1c1d2b;--border:#E6E3F5;--muted:#4b4f6b;--r:16px;--pearl:linear-gradient(135deg,#F4F1FF 0%,#EAF0FF 45%,#F7EEFF 100%)}
 *{box-sizing:border-box}html,body{margin:0;background:var(--cream);color:var(--charcoal)}
 body{font-family:"Onest",Inter,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--forest)}
-.top{position:sticky;top:0;z-index:5;background:rgba(255,254,252,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.top{position:sticky;top:0;z-index:5;background:rgba(252,251,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
 .top .w{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;max-width:1100px;margin:0 auto}
-.logo{font-family:"Inter Tight",Onest,sans-serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--forest)}
-.btn{display:inline-block;background:var(--forest);color:var(--cream);text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:500;font-size:15px;white-space:nowrap}
-.btn.light{background:var(--keylime);color:var(--forest)}
+.logo{font-family:"Inter Tight",Onest,sans-serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--deep)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--forest),var(--violet));color:#fff;text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:500;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.btn.light{background:var(--keylime);color:var(--deep)}
 .w{max-width:760px;margin:0 auto;padding:0 16px}
-.crumbs{font-size:14px;color:var(--muted);margin:28px 0 8px}.crumbs a{color:var(--muted)}
-h1,h2,h3{font-family:"Inter Tight",Onest,sans-serif;letter-spacing:-.02em;color:var(--forest);line-height:1.2}
-h1{font-size:clamp(28px,5vw,42px);font-weight:600;margin:8px 0 18px}
-h2{font-size:clamp(22px,3.4vw,28px);font-weight:600;margin:40px 0 12px}
+.crumbs{font-size:14px;color:var(--muted);margin:22px 0 8px}.crumbs a{color:var(--muted)}
+h1,h2,h3{font-family:"Inter Tight",Onest,sans-serif;letter-spacing:-.02em;color:var(--deep);line-height:1.2}
+h1{font-size:clamp(28px,5vw,42px);font-weight:600;margin:10px 0 14px}
+h2{font-size:clamp(22px,3.4vw,28px);font-weight:600;margin:40px 0 12px;scroll-margin-top:80px}
 p,li{color:var(--charcoal)}
-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--keylime)}
-.faq{background:var(--keylime);border-radius:var(--r);padding:8px 20px 12px;margin:32px 0}
-.cta{background:var(--forest);color:var(--cream);border-radius:var(--r);padding:24px;margin:36px 0}
-.cta h2{color:var(--cream);margin-top:0}.cta p{color:var(--cream)}.cta a.btn{background:var(--cream);color:var(--forest)}.cta ul{margin:6px 0 18px;padding-left:20px}.cta li{color:var(--cream);margin:4px 0}.cta .sec{display:inline-block;margin-left:14px;color:var(--sage);font-size:15px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;display:block;overflow-x:auto;border-radius:12px}
+th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}th{background:var(--mint);color:var(--deep)}
+.faq{background:var(--pearl);border:1px solid var(--border);border-radius:var(--r);padding:8px 20px 12px;margin:32px 0}
+.cta{background:linear-gradient(135deg,#1D2BC4 0%,#3A2BD8 55%,#7B5CFF 100%);color:#fff;border-radius:var(--r);padding:24px;margin:36px 0;box-shadow:0 18px 40px rgba(29,43,196,.25)}
+.cta h2{color:#fff;margin-top:0}.cta p{color:#fff}.cta a.btn{background:#fff;color:var(--deep)}.cta ul{margin:6px 0 18px;padding-left:20px}.cta li{color:#fff;margin:4px 0}.cta .sec{display:inline-block;margin:10px 0 0 14px;color:#DCD3FF;font-size:15px}
 .disc{font-size:14px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;margin:28px 0 48px}
-.list{list-style:none;padding:0;display:grid;gap:10px;margin:24px 0 48px}
-.list a{display:block;border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;text-decoration:none;background:#fff}
-.list a:hover{border-color:var(--sage)}.list b{display:block;color:var(--forest);font-family:"Inter Tight",Onest,sans-serif;font-size:18px;font-weight:600}
-.list span{font-size:14px;color:var(--muted)}
 .more{margin:24px 0}
 footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padding:20px 0 32px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:var(--c,#E4E8FF);color:var(--ct,#141C7A)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:14px;color:var(--muted);margin:6px 0 18px}
+.cover{position:relative;border-radius:20px;overflow:hidden;margin:4px 0 22px;background:var(--pearl);aspect-ratio:16/9;box-shadow:0 14px 40px rgba(20,28,122,.12)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover.contain img{object-fit:contain;padding:10px}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,28,122,.35))}
+.toc{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:14px 18px;margin:0 0 22px}
+.toc b{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--violet)}
+.toc ol{margin:8px 0 0;padding-left:20px}.toc li{margin:3px 0;font-size:15px}.toc a{text-decoration:none;color:var(--deep)}
+.jump{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:500;text-decoration:none;color:var(--deep);background:var(--keylime);border:1px solid var(--sage);border-radius:999px;padding:8px 14px;margin:0 0 20px}
+.photo{margin:28px 0;border-radius:18px;overflow:hidden;background:var(--pearl)}
+.photo img{width:100%;max-height:420px;object-fit:cover;display:block}
+.photo figcaption{font-size:13px;color:var(--muted);padding:9px 14px}
+.memo{position:relative;margin:36px 0;padding:22px 20px 18px;border-radius:20px;background:var(--pearl);border:1.5px solid var(--sage);box-shadow:0 16px 40px rgba(123,92,255,.14);scroll-margin-top:80px}
+.memo .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--forest),var(--violet));padding:5px 11px;border-radius:999px}
+.memo h2{margin:12px 0 6px;font-size:24px}
+.memo .sub{font-size:14px;color:var(--muted);margin:0 0 12px}
+.memo ul{list-style:none;padding:0;margin:0 0 16px}
+.memo li{margin:0;border-top:1px solid var(--border)}
+.memo label{display:flex;gap:12px;align-items:flex-start;padding:11px 2px;cursor:pointer;font-size:16px;line-height:1.45}
+.memo input{appearance:none;flex:0 0 22px;height:22px;border-radius:7px;border:2px solid var(--violet);margin:1px 0 0;background:#fff;display:grid;place-items:center}
+.memo input:checked{background:linear-gradient(135deg,var(--forest),var(--violet));border-color:transparent}
+.memo input:checked:after{content:"✓";color:#fff;font-size:14px;font-weight:700}
+.memo input:checked+span{color:var(--muted);text-decoration:line-through}
+.memo .acts{display:flex;flex-wrap:wrap;gap:8px}
+.memo .prog{font-size:13px;color:var(--violet);font-weight:600;margin:0 0 10px}
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:18px 0 44px}
+.cards a{display:flex;flex-direction:column;height:100%;border:1px solid var(--border);border-radius:18px;overflow:hidden;text-decoration:none;background:#fff;transition:transform .2s,box-shadow .2s}
+.cards a:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,28,122,.12)}
+.cards .th{aspect-ratio:16/9;background:var(--pearl)}.cards .th img{width:100%;height:100%;object-fit:cover;display:block}
+.cards .th.contain img{object-fit:contain;padding:6px}
+.cards .bd{padding:12px 14px 16px;display:flex;flex-direction:column;gap:6px}
+.cards b{color:var(--deep);font-family:"Inter Tight",Onest,sans-serif;font-size:17px;font-weight:600;line-height:1.25}
+.cards span.d{font-size:14px;color:var(--muted);line-height:1.45}
+.cards .mm{font-size:12px;color:var(--violet);font-weight:600}
+.hero-ix{background:var(--pearl);border:1px solid var(--border);border-radius:22px;padding:22px 20px;margin:10px 0 8px}
+@media print{body *{visibility:hidden}.memo,.memo *{visibility:visible}.memo{position:absolute;left:0;top:0;right:0;box-shadow:none}.memo .acts{display:none}}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Почему зубы в Китае дешевле, чем в России, и плохо ли это", "description": "Зубы в Китае дешевле — почему так и как проверить, что низкая цена не означает подвох: что входит в стоимость, какие документы нужны, где бывают доплаты.", "inLanguage": "ru", "keywords": "зубы в китае дешевле, в китае дешевая стоматология, почему в китае дешевая стоматология, цены на зубы в китае, зубы в хэйхэ", "author": {"@type": "Organization", "name": "ЭНО мед"}, "datePublished": "2026-09-28"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Почему зубы в Китае дешевле, чем в России?", "acceptedAnswer": {"@type": "Answer", "text": "Обычно разницу объясняют другой экономикой клиник, курсом валют, большим потоком пациентов и доступностью материалов. Сама по себе цена не говорит о качестве — его определяют врач и материалы."}}, {"@type": "Question", "name": "Насколько дешевле имплантация в Китае?", "acceptedAnswer": {"@type": "Answer", "text": "Ориентир «ЭНО мед» — от 38 000 ₽ за имплантат, установку и формирователь; по данным агрегаторов, в российских клиниках имплант под ключ часто стоит от 70–80 тыс. ₽ и выше. Сравнивайте одинаковый состав работ; точная стоимость — после плана врача."}}, {"@type": "Question", "name": "Дешёвая стоматология в Китае — это опасно?", "acceptedAnswer": {"@type": "Answer", "text": "Опасна не низкая цена, а отсутствие плана, документов и прозрачного расчёта. Проверьте лицензию клиники, получите план до поездки и сохраните документы об оплате."}}, {"@type": "Question", "name": "Может ли цена измениться на месте?", "acceptedAnswer": {"@type": "Answer", "text": "План по снимкам предварительный и может уточняться после осмотра. Врач объясняет причину, решение принимаете вы."}}, {"@type": "Question", "name": "Нужно ли вносить предоплату?", "acceptedAnswer": {"@type": "Answer", "text": "«ЭНО мед» работает без предоплаты."}}]}</script></head><body>
-<header class="top"><div class="w" style="max-width:1100px"><a class="logo" href="../../index.html">ЭНО мед</a><span style="display:flex;gap:8px"><a class="btn light" href="../../stati/index.html">Статьи</a><a class="btn" href="../../index.html">Об ЭНО мед</a></span></div></header>
-<main class="w"><div class="crumbs"><a href="../../index.html">Главная</a> · <a href="../../stati/index.html">Статьи</a></div><h1>Почему зубы в Китае дешевле и как понять, что дёшево — не значит плохо</h1><p>Зубы в Китае дешевле, чем в России, — это подтверждают и публичные отзывы, где люди пишут о цене в 2–4 раза ниже, и сравнение ориентиров. Но сама по себе низкая цена ничего не гарантирует: важно, что в неё входит и как она зафиксирована. Разбираем, откуда разница и как проверить, что за ней нет подвоха.</p><h2>Насколько дешевле: сравнение ориентиров</h2>
+<header class="top"><div class="w" style="max-width:1100px"><a class="logo" href="/enomed-live/">ЭНО мед</a><span style="display:flex;gap:8px"><a class="btn light" href="/enomed-live/stati/">Статьи</a><a class="btn" href="/enomed-live/">Об ЭНО мед</a></span></div></header>
+<main class="w"><div class="crumbs"><a href="/enomed-live/">Главная</a> · <a href="/enomed-live/stati/">Статьи</a></div><h1>Почему зубы в Китае дешевле и как понять, что дёшево — не значит плохо</h1><div class="meta"><span class="chip" style="--c:#E4E8FF;--ct:#141C7A">Цены</span><span>5 мин чтения</span><span>Обновлено 29.09.2026</span></div><div class="cover"><img src="/enomed-live/stati/_img/13.webp" alt=""></div><a class="jump" href="#memo">📌 Памятка к статье — Как проверить, что цена честная</a><nav class="toc"><b>В статье</b><ol><li><a href="#s1">Насколько дешевле: сравнение ориентиров</a></li><li><a href="#s2">Почему в Китае дешёвая стоматология</a></li><li><a href="#s3">Когда «дёшево» действительно должно насторожить</a></li><li><a href="#s4">Как проверить, что цена честная</a></li><li><a href="#s5">Экономия с учётом дороги</a></li><li><a href="#s6">Чем помогает «ЭНО мед»</a></li><li><a href="#memo">📌 Памятка</a></li></ol></nav><p>Зубы в Китае дешевле, чем в России, — это подтверждают и публичные отзывы, где люди пишут о цене в 2–4 раза ниже, и сравнение ориентиров. Но сама по себе низкая цена ничего не гарантирует: важно, что в неё входит и как она зафиксирована. Разбираем, откуда разница и как проверить, что за ней нет подвоха.</p><h2 id="s1">Насколько дешевле: сравнение ориентиров</h2>
 <p>Сравнивать удобнее всего на имплантации. По данным агрегаторов, в российских клиниках имплант под ключ часто стоит от 70–80 тыс. ₽ и выше. У «ЭНО мед» ориентир на имплантацию в Хэйхэ — от 38 000 ₽ за имплантат, установку и формирователь (по сайту на 26.09.2026; точная стоимость — после плана врача).</p>
-<p>Обратите внимание на слова «под ключ» и «имплантат + установка + формирователь». Это разные наборы работ: в «под ключ» обычно входит и коронка. Сравнивать нужно одинаковое с одинаковым, иначе разница кажется больше или меньше, чем есть на самом деле. Подробно о составе цены — в статье <a href="../../stati/implantaciya-zubov-v-kitae/index.html">«Имплантация зубов в Китае: что входит в цену»</a>.</p><h2>Почему в Китае дешёвая стоматология</h2>
+<p>Обратите внимание на слова «под ключ» и «имплантат + установка + формирователь». Это разные наборы работ: в «под ключ» обычно входит и коронка. Сравнивать нужно одинаковое с одинаковым, иначе разница кажется больше или меньше, чем есть на самом деле. Подробно о составе цены — в статье <a href="/enomed-live/stati/implantaciya-zubov-v-kitae/">«Имплантация зубов в Китае: что входит в цену»</a>.</p><h2 id="s2">Почему в Китае дешёвая стоматология</h2>
 <p>Точных расчётов себестоимости по клиникам в открытом доступе нет, и мы не будем придумывать цифры. Обычно разницу объясняют сочетанием факторов:</p>
 <ul>
 <li><strong>Другая экономика.</strong> Аренда, зарплаты, налоги и стоимость обслуживания оборудования в Китае устроены иначе, чем в России.</li>
@@ -42,7 +75,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li><strong>Поток пациентов.</strong> Клиники приграничных городов, в том числе Хэйхэ, работают с большим потоком пациентов из России. Пункт пропуска Благовещенск — Хэйхэ с начала 2026 года обслужил более 1 млн человек (по данным amurpolit.ru).</li>
 <li><strong>Доступность материалов и лабораторий.</strong> Часть материалов и работ может производиться ближе к клинике.</li>
 </ul>
-<p>Ни один из этих факторов не говорит о качестве лечения — ни в плюс, ни в минус. Качество определяют врач, материалы и соблюдение плана.</p><h2>Когда «дёшево» действительно должно насторожить</h2>
+<p>Ни один из этих факторов не говорит о качестве лечения — ни в плюс, ни в минус. Качество определяют врач, материалы и соблюдение плана.</p><figure class="photo"><img loading="lazy" src="/enomed-live/stati/_img/14.webp" alt=""><figcaption>Клиника-партнёр в Хэйхэ · демонстрационное фото</figcaption></figure><h2 id="s3">Когда «дёшево» действительно должно насторожить</h2>
 <p>Низкая цена опасна не сама по себе, а когда за ней прячутся:</p>
 <ol>
 <li><strong>Цена «от», которая на месте вырастает.</strong> Самая частая жалоба в публичных отзывах: обещали одно, на месте насчитали другое.</li>
@@ -50,7 +83,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li><strong>Предоплата незнакомому посреднику.</strong> Деньги ушли, а кто и где будет лечить — неясно.</li>
 <li><strong>Непонятные материалы.</strong> Пациенты боятся подмены имплантов и материалов, и это разумный страх, если не выданы документы.</li>
 <li><strong>«Государственная клиника» в рекламе.</strong> Сотни сайтов так себя называют. Проверять нужно лицензию, а не слова.</li>
-</ol><h2>Как проверить, что цена честная</h2>
+</ol><h2 id="s4">Как проверить, что цена честная</h2>
 <p>Вот что стоит сделать до поездки:</p>
 <ul>
 <li>получить предварительный план и расчёт от врача — по вашим снимкам, а не «в среднем»;</li>
@@ -59,9 +92,9 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li>посмотреть лицензию клиники и её перевод;</li>
 <li>договориться, что при изменении плана на месте врач объясняет причину, а вы решаете до начала работ.</li>
 </ul>
-<p>Клиника-партнёр «ЭНО мед» — Комплексная поликлиника «Ино» в Хэйхэ, лицензия действует до 22.06.2031, есть заверенный перевод.</p><h2>Экономия с учётом дороги</h2>
-<p>Честное сравнение — это не только цена лечения. К ней добавляются дорога, проживание, дни отпуска и, возможно, повторные поездки. Для жителя Благовещенска Хэйхэ — через реку, для жителя Сибири дорога заметно дороже. Как посчитать итог, мы разобрали в статье <a href="../../stati/zuby-v-kitae-ili-v-blagoveshchenske/index.html">«Зубы в Китае или в Благовещенске: честное сравнение»</a>.</p><h2>Чем помогает «ЭНО мед»</h2>
-<p>«ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Мы работаем без предоплаты, получаем предварительный план от врача до поездки, даём русскоговорящего куратора на каждом этапе, встречаем в Хэйхэ, сопровождаем до клиники и помогаем со связью с клиникой после возвращения.</p><section class="faq"><h2>Частые вопросы</h2>
+<p>Клиника-партнёр «ЭНО мед» — Комплексная поликлиника «Ино» в Хэйхэ, лицензия действует до 22.06.2031, есть заверенный перевод.</p><h2 id="s5">Экономия с учётом дороги</h2>
+<p>Честное сравнение — это не только цена лечения. К ней добавляются дорога, проживание, дни отпуска и, возможно, повторные поездки. Для жителя Благовещенска Хэйхэ — через реку, для жителя Сибири дорога заметно дороже. Как посчитать итог, мы разобрали в статье <a href="/enomed-live/stati/zuby-v-kitae-ili-v-blagoveshchenske/">«Зубы в Китае или в Благовещенске: честное сравнение»</a>.</p><h2 id="s6">Чем помогает «ЭНО мед»</h2>
+<p>«ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Мы работаем без предоплаты, получаем предварительный план от врача до поездки, даём русскоговорящего куратора на каждом этапе, встречаем в Хэйхэ, сопровождаем до клиники и помогаем со связью с клиникой после возвращения.</p><section class="memo" id="memo" data-n="22"><span class="tag">📌 Памятка · сохраните</span><h2>Как проверить, что цена честная</h2><p class="sub">Отмечайте пункты по мере подготовки. Сохраните памятку в PDF или отправьте себе — пригодится перед поездкой.</p><p class="prog">Готово: <span class="pc">0</span> из 6</p><ul><li><label><input type="checkbox"><span>Цена указана по позициям, а не одной суммой</span></label></li><li><label><input type="checkbox"><span>Известен производитель импланта и материал коронки</span></label></li><li><label><input type="checkbox"><span>Врач назвал цену после снимков, а не «на глаз»</span></label></li><li><label><input type="checkbox"><span>Нет обещаний «пожизненной гарантии без условий»</span></label></li><li><label><input type="checkbox"><span>Нет давления «решайте сегодня»</span></label></li><li><label><input type="checkbox"><span>Экономия посчитана с учётом дороги</span></label></li></ul><div class="acts"><button class="btn" type="button" onclick="window.print()">Сохранить в PDF</button><a class="btn light tg" target="_blank" rel="noopener">Отправить себе в Telegram</a></div></section><section class="faq"><h2>Частые вопросы</h2>
 <p><strong>Почему зубы в Китае дешевле, чем в России?</strong>
 Обычно разницу объясняют другой экономикой клиник, курсом валют, большим потоком пациентов и доступностью материалов. Сама по себе цена не говорит о качестве — его определяют врач и материалы.</p>
 <p><strong>Насколько дешевле имплантация в Китае?</strong>
@@ -71,4 +104,4 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <p><strong>Может ли цена измениться на месте?</strong>
 План по снимкам предварительный и может уточняться после осмотра. Врач объясняет причину, решение принимаете вы.</p>
 <p><strong>Нужно ли вносить предоплату?</strong>
-«ЭНО мед» работает без предоплаты.</p></section><section class="cta"><h2>Кто такие «ЭНО мед» и как мы сопровождаем лечение</h2><p>Мы из Благовещенска и организуем лечение зубов в Хэйхэ так, чтобы вы заранее понимали каждый шаг:</p><ul><li>план лечения и смета — до поездки, без предоплаты;</li><li>русскоговорящий куратор — от границы до кресла врача и после возвращения;</li><li>клиника с лицензией и открытыми документами врачей;</li><li>паспорт импланта на руках после лечения.</li></ul><a class="btn" href="../../index.html">Узнать подробности →</a><a class="sec" href="../../index.html#contact">или сразу получить план лечения</a></section><div class="disc"><p><em>Материал носит информационный характер и не является медицинской консультацией. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Решение о лечении принимает врач после осмотра.</em></p></div></main><footer><div class="w">«ЭНО мед» не является медицинской организацией. Лечение проводит партнёрская клиника в Хэйхэ. ИП Ожегов Р.В., ИНН 280113718085. Концепт подготовлен ИИщенко LAB для встречи ИИщенко CLUB 29.09.2026.</div></footer></body></html>
+«ЭНО мед» работает без предоплаты.</p></section><section class="cta"><h2>Кто такие «ЭНО мед» и как мы сопровождаем лечение</h2><p>Мы из Благовещенска и организуем лечение зубов в Хэйхэ так, чтобы вы заранее понимали каждый шаг:</p><ul><li>план лечения и смета — до поездки, без предоплаты;</li><li>русскоговорящий куратор — от границы до кресла врача и после возвращения;</li><li>клиника с лицензией и открытыми документами врачей;</li><li>паспорт импланта на руках после лечения.</li></ul><a class="btn" href="/enomed-live/">Узнать подробности →</a><a class="sec" href="/enomed-live/#contact">или сразу получить план лечения</a></section><div class="disc"><p><em>Материал носит информационный характер и не является медицинской консультацией. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Решение о лечении принимает врач после осмотра.</em></p></div></main><script>(function(){var m=document.getElementById("memo");if(!m)return;var k="memo"+m.dataset.n,b=m.querySelectorAll("input"),pc=m.querySelector(".pc");var st={};try{st=JSON.parse(localStorage.getItem(k)||"{}")}catch(e){}b.forEach(function(x,i){x.checked=!!st[i];x.onchange=function(){st[i]=x.checked;try{localStorage.setItem(k,JSON.stringify(st))}catch(e){}up()}});function up(){pc.textContent=[].filter.call(b,function(x){return x.checked}).length}up();var tg=m.querySelector(".tg");tg.href="https://t.me/share/url?url="+encodeURIComponent(location.href)+"&text="+encodeURIComponent("Памятка: "+m.querySelector("h2").textContent)})()</script><footer><div class="w">«ЭНО мед» не является медицинской организацией. Лечение проводит партнёрская клиника в Хэйхэ. ИП Ожегов Р.В., ИНН 280113718085. Демонстрационная версия сайта.</div></footer></body></html>

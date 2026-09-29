@@ -3,38 +3,71 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Onest:wght@400;500;600&display=swap">
 <style>
-:root{--forest:#0f3e17;--sage:#b1dbb8;--keylime:#e1f4df;--mint:#cfe7d3;--cream:#fffefc;--charcoal:#222;--border:#efeeeb;--muted:#3d4f40;--r:14px}
+:root{--forest:#1D2BC4;--deep:#141C7A;--violet:#7B5CFF;--sage:#C4B5FD;--keylime:#F1EEFF;--mint:#E4E8FF;--cream:#FCFBFF;--charcoal:#1c1d2b;--border:#E6E3F5;--muted:#4b4f6b;--r:16px;--pearl:linear-gradient(135deg,#F4F1FF 0%,#EAF0FF 45%,#F7EEFF 100%)}
 *{box-sizing:border-box}html,body{margin:0;background:var(--cream);color:var(--charcoal)}
 body{font-family:"Onest",Inter,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--forest)}
-.top{position:sticky;top:0;z-index:5;background:rgba(255,254,252,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.top{position:sticky;top:0;z-index:5;background:rgba(252,251,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
 .top .w{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;max-width:1100px;margin:0 auto}
-.logo{font-family:"Inter Tight",Onest,sans-serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--forest)}
-.btn{display:inline-block;background:var(--forest);color:var(--cream);text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:500;font-size:15px;white-space:nowrap}
-.btn.light{background:var(--keylime);color:var(--forest)}
+.logo{font-family:"Inter Tight",Onest,sans-serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--deep)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--forest),var(--violet));color:#fff;text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:500;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.btn.light{background:var(--keylime);color:var(--deep)}
 .w{max-width:760px;margin:0 auto;padding:0 16px}
-.crumbs{font-size:14px;color:var(--muted);margin:28px 0 8px}.crumbs a{color:var(--muted)}
-h1,h2,h3{font-family:"Inter Tight",Onest,sans-serif;letter-spacing:-.02em;color:var(--forest);line-height:1.2}
-h1{font-size:clamp(28px,5vw,42px);font-weight:600;margin:8px 0 18px}
-h2{font-size:clamp(22px,3.4vw,28px);font-weight:600;margin:40px 0 12px}
+.crumbs{font-size:14px;color:var(--muted);margin:22px 0 8px}.crumbs a{color:var(--muted)}
+h1,h2,h3{font-family:"Inter Tight",Onest,sans-serif;letter-spacing:-.02em;color:var(--deep);line-height:1.2}
+h1{font-size:clamp(28px,5vw,42px);font-weight:600;margin:10px 0 14px}
+h2{font-size:clamp(22px,3.4vw,28px);font-weight:600;margin:40px 0 12px;scroll-margin-top:80px}
 p,li{color:var(--charcoal)}
-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--keylime)}
-.faq{background:var(--keylime);border-radius:var(--r);padding:8px 20px 12px;margin:32px 0}
-.cta{background:var(--forest);color:var(--cream);border-radius:var(--r);padding:24px;margin:36px 0}
-.cta h2{color:var(--cream);margin-top:0}.cta p{color:var(--cream)}.cta a.btn{background:var(--cream);color:var(--forest)}.cta ul{margin:6px 0 18px;padding-left:20px}.cta li{color:var(--cream);margin:4px 0}.cta .sec{display:inline-block;margin-left:14px;color:var(--sage);font-size:15px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;display:block;overflow-x:auto;border-radius:12px}
+th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}th{background:var(--mint);color:var(--deep)}
+.faq{background:var(--pearl);border:1px solid var(--border);border-radius:var(--r);padding:8px 20px 12px;margin:32px 0}
+.cta{background:linear-gradient(135deg,#1D2BC4 0%,#3A2BD8 55%,#7B5CFF 100%);color:#fff;border-radius:var(--r);padding:24px;margin:36px 0;box-shadow:0 18px 40px rgba(29,43,196,.25)}
+.cta h2{color:#fff;margin-top:0}.cta p{color:#fff}.cta a.btn{background:#fff;color:var(--deep)}.cta ul{margin:6px 0 18px;padding-left:20px}.cta li{color:#fff;margin:4px 0}.cta .sec{display:inline-block;margin:10px 0 0 14px;color:#DCD3FF;font-size:15px}
 .disc{font-size:14px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;margin:28px 0 48px}
-.list{list-style:none;padding:0;display:grid;gap:10px;margin:24px 0 48px}
-.list a{display:block;border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;text-decoration:none;background:#fff}
-.list a:hover{border-color:var(--sage)}.list b{display:block;color:var(--forest);font-family:"Inter Tight",Onest,sans-serif;font-size:18px;font-weight:600}
-.list span{font-size:14px;color:var(--muted)}
 .more{margin:24px 0}
 footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padding:20px 0 32px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:var(--c,#E4E8FF);color:var(--ct,#141C7A)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:14px;color:var(--muted);margin:6px 0 18px}
+.cover{position:relative;border-radius:20px;overflow:hidden;margin:4px 0 22px;background:var(--pearl);aspect-ratio:16/9;box-shadow:0 14px 40px rgba(20,28,122,.12)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover.contain img{object-fit:contain;padding:10px}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,28,122,.35))}
+.toc{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:14px 18px;margin:0 0 22px}
+.toc b{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--violet)}
+.toc ol{margin:8px 0 0;padding-left:20px}.toc li{margin:3px 0;font-size:15px}.toc a{text-decoration:none;color:var(--deep)}
+.jump{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:500;text-decoration:none;color:var(--deep);background:var(--keylime);border:1px solid var(--sage);border-radius:999px;padding:8px 14px;margin:0 0 20px}
+.photo{margin:28px 0;border-radius:18px;overflow:hidden;background:var(--pearl)}
+.photo img{width:100%;max-height:420px;object-fit:cover;display:block}
+.photo figcaption{font-size:13px;color:var(--muted);padding:9px 14px}
+.memo{position:relative;margin:36px 0;padding:22px 20px 18px;border-radius:20px;background:var(--pearl);border:1.5px solid var(--sage);box-shadow:0 16px 40px rgba(123,92,255,.14);scroll-margin-top:80px}
+.memo .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--forest),var(--violet));padding:5px 11px;border-radius:999px}
+.memo h2{margin:12px 0 6px;font-size:24px}
+.memo .sub{font-size:14px;color:var(--muted);margin:0 0 12px}
+.memo ul{list-style:none;padding:0;margin:0 0 16px}
+.memo li{margin:0;border-top:1px solid var(--border)}
+.memo label{display:flex;gap:12px;align-items:flex-start;padding:11px 2px;cursor:pointer;font-size:16px;line-height:1.45}
+.memo input{appearance:none;flex:0 0 22px;height:22px;border-radius:7px;border:2px solid var(--violet);margin:1px 0 0;background:#fff;display:grid;place-items:center}
+.memo input:checked{background:linear-gradient(135deg,var(--forest),var(--violet));border-color:transparent}
+.memo input:checked:after{content:"✓";color:#fff;font-size:14px;font-weight:700}
+.memo input:checked+span{color:var(--muted);text-decoration:line-through}
+.memo .acts{display:flex;flex-wrap:wrap;gap:8px}
+.memo .prog{font-size:13px;color:var(--violet);font-weight:600;margin:0 0 10px}
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:18px 0 44px}
+.cards a{display:flex;flex-direction:column;height:100%;border:1px solid var(--border);border-radius:18px;overflow:hidden;text-decoration:none;background:#fff;transition:transform .2s,box-shadow .2s}
+.cards a:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,28,122,.12)}
+.cards .th{aspect-ratio:16/9;background:var(--pearl)}.cards .th img{width:100%;height:100%;object-fit:cover;display:block}
+.cards .th.contain img{object-fit:contain;padding:6px}
+.cards .bd{padding:12px 14px 16px;display:flex;flex-direction:column;gap:6px}
+.cards b{color:var(--deep);font-family:"Inter Tight",Onest,sans-serif;font-size:17px;font-weight:600;line-height:1.25}
+.cards span.d{font-size:14px;color:var(--muted);line-height:1.45}
+.cards .mm{font-size:12px;color:var(--violet);font-weight:600}
+.hero-ix{background:var(--pearl);border:1px solid var(--border);border-radius:22px;padding:22px 20px;margin:10px 0 8px}
+@media print{body *{visibility:hidden}.memo,.memo *{visibility:visible}.memo{position:absolute;left:0;top:0;right:0;box-shadow:none}.memo .acts{display:none}}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Хэйхэ стоматология: отзывы — как читать и проверять", "description": "Хэйхэ стоматология: отзывы пациентов бывают подставными. Как отличить настоящий отзыв от рекламы, что проверить у клиники и посредника до поездки.", "inLanguage": "ru", "keywords": "хэйхэ стоматология отзывы, зубы в хэйхэ отзывы, зубы в китае хэйхэ отзывы, как проверить стоматологию в хэйхэ", "author": {"@type": "Organization", "name": "ЭНО мед"}, "datePublished": "2026-09-28"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Как понять, что отзыв о стоматологии в Хэйхэ подставной?", "acceptedAnswer": {"@type": "Answer", "text": "Насторожитесь, если отзыв короткий, без деталей, только восторженный и заканчивается контактом или ссылкой. Настоящие отзывы обычно описывают этапы, сроки и мелкие сложности."}}, {"@type": "Question", "name": "Где искать реальные отзывы о зубах в Хэйхэ?", "acceptedAnswer": {"@type": "Answer", "text": "Ищите подробные истории на форумах и в обсуждениях, где можно задать автору вопрос. Но главная проверка — документы клиники и письменный план, а не отзывы."}}, {"@type": "Question", "name": "Какие документы клиники стоит проверить?", "acceptedAnswer": {"@type": "Answer", "text": "Лицензию и её перевод, а также письменный предварительный план с расчётом. Условия гарантии уточняйте в договоре."}}, {"@type": "Question", "name": "Посредник — это плохо?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, если он честно говорит, что организует поездку, называет клинику и не берёт предоплату. Плохо, когда посредник выдаёт себя за клинику или «государственную стоматологию»."}}, {"@type": "Question", "name": "Что делать, если меня встретили у таможни незнакомые люди?", "acceptedAnswer": {"@type": "Answer", "text": "Не уходите с ними. Заранее договоритесь, кто вас встретит, и держите связь со своим куратором."}}]}</script></head><body>
-<header class="top"><div class="w" style="max-width:1100px"><a class="logo" href="../../index.html">ЭНО мед</a><span style="display:flex;gap:8px"><a class="btn light" href="../../stati/index.html">Статьи</a><a class="btn" href="../../index.html">Об ЭНО мед</a></span></div></header>
-<main class="w"><div class="crumbs"><a href="../../index.html">Главная</a> · <a href="../../stati/index.html">Статьи</a></div><h1>Отзывы о стоматологиях Хэйхэ: как читать и проверять</h1><p>Отзывы о стоматологии в Хэйхэ помогают составить первое впечатление, но опираться только на них рискованно: в теме много посредников, и часть отзывов пишется ради рекламы. Надёжнее проверять то, что нельзя подделать словами, — документы клиники, письменный план лечения и условия оплаты. Ниже — как отличить реальный опыт от подставного и что проверить до поездки.</p><h2>Почему отзывам о Хэйхэ нельзя верить на слово</h2>
+<header class="top"><div class="w" style="max-width:1100px"><a class="logo" href="/enomed-live/">ЭНО мед</a><span style="display:flex;gap:8px"><a class="btn light" href="/enomed-live/stati/">Статьи</a><a class="btn" href="/enomed-live/">Об ЭНО мед</a></span></div></header>
+<main class="w"><div class="crumbs"><a href="/enomed-live/">Главная</a> · <a href="/enomed-live/stati/">Статьи</a></div><h1>Отзывы о стоматологиях Хэйхэ: как читать и проверять</h1><div class="meta"><span class="chip" style="--c:#E6F0FF;--ct:#1D4FC4">Как выбрать</span><span>5 мин чтения</span><span>Обновлено 29.09.2026</span></div><div class="cover"><img src="/enomed-live/stati/_img/16.webp" alt=""></div><a class="jump" href="#memo">📌 Памятка к статье — Признаки подставного отзыва</a><nav class="toc"><b>В статье</b><ol><li><a href="#s1">Почему отзывам о Хэйхэ нельзя верить на слово</a></li><li><a href="#s2">Признаки подставного отзыва</a></li><li><a href="#s3">Как выглядит полезный отзыв</a></li><li><a href="#s4">Что проверить вместо отзывов</a></li><li><a href="#s5">Что говорят отзывы в целом</a></li><li><a href="#s6">Как работает «ЭНО мед»</a></li><li><a href="#memo">📌 Памятка</a></li></ol></nav><p>Отзывы о стоматологии в Хэйхэ помогают составить первое впечатление, но опираться только на них рискованно: в теме много посредников, и часть отзывов пишется ради рекламы. Надёжнее проверять то, что нельзя подделать словами, — документы клиники, письменный план лечения и условия оплаты. Ниже — как отличить реальный опыт от подставного и что проверить до поездки.</p><h2 id="s1">Почему отзывам о Хэйхэ нельзя верить на слово</h2>
 <p>Лечение зубов в Хэйхэ стало массовым: по данным amurpolit.ru, пункт пропуска Благовещенск — Хэйхэ с начала 2026 года обслужил более 1 млн человек. Где большой поток людей, там и большая конкуренция за пациентов. В публичных обсуждениях пишут о сотнях сайтов, которые называют себя «государственной клиникой», и о посредниках, которые «перехватывают» пациентов у таможни.</p>
-<p>Отзывы в такой среде — тоже инструмент продаж. Это не значит, что все они ложные. Но это значит, что отзыв — повод задать вопросы, а не готовый ответ.</p><h2>Признаки подставного отзыва</h2>
+<p>Отзывы в такой среде — тоже инструмент продаж. Это не значит, что все они ложные. Но это значит, что отзыв — повод задать вопросы, а не готовый ответ.</p><h2 id="s2">Признаки подставного отзыва</h2>
 <p>Проверьте текст по этим признакам. Чем больше совпадений, тем осторожнее стоит к нему относиться:</p>
 <ul>
 <li><strong>Нет деталей.</strong> «Всё отлично, рекомендую» — без описания этапов, сроков и того, что именно делали.</li>
@@ -43,7 +76,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li><strong>Одинаковые формулировки.</strong> Несколько отзывов под разными именами звучат похоже.</li>
 <li><strong>Резкий контраст.</strong> Одна клиника хвалится, соседние ругаются — в одном и том же тексте.</li>
 <li><strong>Много отзывов за короткое время</strong> с новых аккаунтов без другой активности.</li>
-</ul><h2>Как выглядит полезный отзыв</h2>
+</ul><figure class="photo"><img loading="lazy" src="/enomed-live/stati/_img/17.webp" alt=""><figcaption>Клиника-партнёр в Хэйхэ · демонстрационное фото</figcaption></figure><h2 id="s3">Как выглядит полезный отзыв</h2>
 <p>Полезный отзыв о зубах в Хэйхэ обычно отвечает на практические вопросы:</p>
 <ol>
 <li>Какая была исходная ситуация и что предложили.</li>
@@ -53,7 +86,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li>Выдали ли документы и чеки.</li>
 <li>Что было после возвращения домой.</li>
 </ol>
-<p>Даже если в таком отзыве есть минусы, он ценнее десятка коротких восторженных. Важно понимать: чужой медицинский результат не переносится на вас. Решение о лечении принимает врач после осмотра и снимков.</p><h2>Что проверить вместо отзывов</h2>
+<p>Даже если в таком отзыве есть минусы, он ценнее десятка коротких восторженных. Важно понимать: чужой медицинский результат не переносится на вас. Решение о лечении принимает врач после осмотра и снимков.</p><h2 id="s4">Что проверить вместо отзывов</h2>
 <p>Самые надёжные проверки — те, где нужен документ, а не мнение:</p>
 <ul>
 <li><strong>Лицензия клиники.</strong> Попросите показать лицензию и перевод. Например, у клиники-партнёра «ЭНО мед» — Комплексной поликлиники «Ино» в Хэйхэ — лицензия действует до 22.06.2031, есть заверенный перевод.</li>
@@ -63,8 +96,8 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li><strong>Кто встречает.</strong> Заранее знайте, кто вас встретит в Хэйхэ, чтобы не уйти с посторонними людьми у таможни.</li>
 <li><strong>Гарантия.</strong> Уточните условия в договоре и спросите, что будет, если понадобится переделка.</li>
 </ul>
-<p>Более подробный чек-лист есть в статье <a href="../../stati/kak-vybrat-stomatologiyu-v-heihe/index.html">как выбрать стоматологию в Хэйхэ</a>.</p><h2>Что говорят отзывы в целом</h2>
-<p>Если обобщить публичные отзывы о лечении в Хэйхэ, люди чаще всего хвалят скорость (часто 3–7 дней на этап), цену, встречу и сопровождение, а также отсутствие скрытых доплат там, где их не было. Жалуются на рост цены на месте, отсутствие прайса и квитанций, предоплату, трудности с гарантией на расстоянии и подмену материалов. В СМИ добавляют: гарантия китайской клиники в России не действует, а вернуть деньги по китайскому праву сложно.</p><h2>Как работает «ЭНО мед»</h2>
+<p>Более подробный чек-лист есть в статье <a href="/enomed-live/stati/kak-vybrat-stomatologiyu-v-heihe/">как выбрать стоматологию в Хэйхэ</a>.</p><h2 id="s5">Что говорят отзывы в целом</h2>
+<p>Если обобщить публичные отзывы о лечении в Хэйхэ, люди чаще всего хвалят скорость (часто 3–7 дней на этап), цену, встречу и сопровождение, а также отсутствие скрытых доплат там, где их не было. Жалуются на рост цены на месте, отсутствие прайса и квитанций, предоплату, трудности с гарантией на расстоянии и подмену материалов. В СМИ добавляют: гарантия китайской клиники в России не действует, а вернуть деньги по китайскому праву сложно.</p><h2 id="s6">Как работает «ЭНО мед»</h2>
 <p>«ЭНО мед» — семейный бизнес из Благовещенска, который организует и сопровождает лечение зубов в Хэйхэ. Мы не медицинская организация и не выдаём себя за клинику. Мы прямо называем клинику-партнёра и работаем так:</p>
 <ul>
 <li>без предоплаты;</li>
@@ -72,7 +105,7 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <li>русскоговорящий куратор на каждом этапе;</li>
 <li>помощь с подготовкой поездки, встреча в Хэйхэ и сопровождение до клиники;</li>
 <li>поддержка после возвращения домой и помощь в связи с клиникой.</li>
-</ul><section class="faq"><h2>Частые вопросы</h2>
+</ul><section class="memo" id="memo" data-n="4"><span class="tag">📌 Памятка · сохраните</span><h2>Признаки подставного отзыва</h2><p class="sub">Отмечайте пункты по мере подготовки. Сохраните памятку в PDF или отправьте себе — пригодится перед поездкой.</p><p class="prog">Готово: <span class="pc">0</span> из 6</p><ul><li><label><input type="checkbox"><span>Одинаковый стиль у разных «авторов»</span></label></li><li><label><input type="checkbox"><span>Нет ни города, ни даты, ни вида лечения</span></label></li><li><label><input type="checkbox"><span>Отзывы опубликованы пачкой в один день</span></label></li><li><label><input type="checkbox"><span>Есть только восторги, без единой детали</span></label></li><li><label><input type="checkbox"><span>Ссылка ведёт на посредника, а не на клинику</span></label></li><li><label><input type="checkbox"><span>Автор настойчиво зовёт написать «лично»</span></label></li></ul><div class="acts"><button class="btn" type="button" onclick="window.print()">Сохранить в PDF</button><a class="btn light tg" target="_blank" rel="noopener">Отправить себе в Telegram</a></div></section><section class="faq"><h2>Частые вопросы</h2>
 <p><strong>Как понять, что отзыв о стоматологии в Хэйхэ подставной?</strong>
 Насторожитесь, если отзыв короткий, без деталей, только восторженный и заканчивается контактом или ссылкой. Настоящие отзывы обычно описывают этапы, сроки и мелкие сложности.</p>
 <p><strong>Где искать реальные отзывы о зубах в Хэйхэ?</strong>
@@ -82,4 +115,4 @@ footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);padd
 <p><strong>Посредник — это плохо?</strong>
 Нет, если он честно говорит, что организует поездку, называет клинику и не берёт предоплату. Плохо, когда посредник выдаёт себя за клинику или «государственную стоматологию».</p>
 <p><strong>Что делать, если меня встретили у таможни незнакомые люди?</strong>
-Не уходите с ними. Заранее договоритесь, кто вас встретит, и держите связь со своим куратором.</p></section><section class="cta"><h2>Кто такие «ЭНО мед» и как мы сопровождаем лечение</h2><p>Мы из Благовещенска и организуем лечение зубов в Хэйхэ так, чтобы вы заранее понимали каждый шаг:</p><ul><li>план лечения и смета — до поездки, без предоплаты;</li><li>русскоговорящий куратор — от границы до кресла врача и после возвращения;</li><li>клиника с лицензией и открытыми документами врачей;</li><li>паспорт импланта на руках после лечения.</li></ul><a class="btn" href="../../index.html">Узнать подробности →</a><a class="sec" href="../../index.html#contact">или сразу получить план лечения</a></section><div class="disc"><p><em>Материал носит информационный характер и не является медицинской консультацией. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Решение о лечении принимает врач после осмотра.</em></p></div></main><footer><div class="w">«ЭНО мед» не является медицинской организацией. Лечение проводит партнёрская клиника в Хэйхэ. ИП Ожегов Р.В., ИНН 280113718085. Концепт подготовлен ИИщенко LAB для встречи ИИщенко CLUB 29.09.2026.</div></footer></body></html>
+Не уходите с ними. Заранее договоритесь, кто вас встретит, и держите связь со своим куратором.</p></section><section class="cta"><h2>Кто такие «ЭНО мед» и как мы сопровождаем лечение</h2><p>Мы из Благовещенска и организуем лечение зубов в Хэйхэ так, чтобы вы заранее понимали каждый шаг:</p><ul><li>план лечения и смета — до поездки, без предоплаты;</li><li>русскоговорящий куратор — от границы до кресла врача и после возвращения;</li><li>клиника с лицензией и открытыми документами врачей;</li><li>паспорт импланта на руках после лечения.</li></ul><a class="btn" href="/enomed-live/">Узнать подробности →</a><a class="sec" href="/enomed-live/#contact">или сразу получить план лечения</a></section><div class="disc"><p><em>Материал носит информационный характер и не является медицинской консультацией. «ЭНО мед» — организатор поездки и сопровождения, не медицинская организация. Решение о лечении принимает врач после осмотра.</em></p></div></main><script>(function(){var m=document.getElementById("memo");if(!m)return;var k="memo"+m.dataset.n,b=m.querySelectorAll("input"),pc=m.querySelector(".pc");var st={};try{st=JSON.parse(localStorage.getItem(k)||"{}")}catch(e){}b.forEach(function(x,i){x.checked=!!st[i];x.onchange=function(){st[i]=x.checked;try{localStorage.setItem(k,JSON.stringify(st))}catch(e){}up()}});function up(){pc.textContent=[].filter.call(b,function(x){return x.checked}).length}up();var tg=m.querySelector(".tg");tg.href="https://t.me/share/url?url="+encodeURIComponent(location.href)+"&text="+encodeURIComponent("Памятка: "+m.querySelector("h2").textContent)})()</script><footer><div class="w">«ЭНО мед» не является медицинской организацией. Лечение проводит партнёрская клиника в Хэйхэ. ИП Ожегов Р.В., ИНН 280113718085. Демонстрационная версия сайта.</div></footer></body></html>
